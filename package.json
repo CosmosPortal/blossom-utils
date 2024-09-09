@@ -1,0 +1,52 @@
+{
+	"name": "blossom-utils",
+	"description": "",
+	"version": "0.1.0",
+	"author": "Cosmos Portal",
+	"license": "MIT",
+	"keywords": [],
+	"type": "module",
+	"main": "dist/index.js",
+	"imports": {
+		"@lib/constants": "./dist/lib/constants/index.js",
+		"@lib/enums": "./dist/lib/enums/index.js",
+		"@lib/interfaces": "./dist/lib/interfaces/index.js",
+		"@lib/types": "./dist/lib/types/index.js",
+		"@lib/utils": "./dist/lib/utils/index.js",
+		"@lib/*": "./dist/lib/*.js"
+	},
+	"scripts": {
+		"build": "tsup",
+		"prettier": "prettier --write \"./src/**/*.{js,ts,md,json}\"",
+		"prettier:check": "prettier --check \"./src/**/*.{js,ts,md,json}\"",
+		"start": "node ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CosmosPortal/blossom-world.git"
+	},
+	"bugs": {
+		"url": "https://github.com/CosmosPortal/blossom-world/issues"
+	},
+	"homepage": "https://github.com/CosmosPortal/blossom-world#readme",
+	"devDependencies": {
+		"@swc/core": "^1.7.14",
+		"prettier": "^3.3.3",
+		"tsup": "^8.2.4",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"@cosmosportal/utilities": "^0.2.1",
+		"@sapphire/decorators": "^6.1.0",
+		"@sapphire/duration": "^1.1.2",
+		"@sapphire/fetch": "^3.0.3",
+		"@sapphire/framework": "^5.2.1",
+		"@sapphire/plugin-logger": "^4.0.2",
+		"@sapphire/plugin-subcommands": "^7.0.0",
+		"@sapphire/utilities": "^3.17.0",
+		"discord.js": "^14.16.1",
+		"dotenv": "^16.4.5",
+		"sqlite3": "^5.1.7",
+		"typeorm": "^0.3.20"
+	}
+}

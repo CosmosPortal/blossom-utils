@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noImplicitAny": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"allowSyntheticDefaultImports": true,
+		"strictNullChecks": true,
+		"allowJs": true,
+		"target": "ESNext",
+		"moduleResolution": "Node",
+		"module": "ESNext",
+		"declaration": true,
+		"noImplicitOverride": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"verbatimModuleSyntax": true,
+		"outDir": "dist",
+		"rootDir": "src",
+		"baseUrl": "./src",
+		"paths": {
+			"@lib/constants": ["lib/constants/index.js"],
+			"@lib/enums": ["lib/enums/index.js"],
+			"@lib/interfaces": ["lib/interfaces/index.js"],
+			"@lib/types": ["lib/types/index.js"],
+			"@lib/utils": ["lib/utils/index.js"],
+			"@lib/*": ["lib/*"]
+		},
+		"lib": ["ESNext"]
+	},
+	"include": ["src"]
+}
